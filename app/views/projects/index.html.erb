@@ -1,1 +1,8 @@
-index project
+<div class="projects">
+  <% @projects.each do |p| %>
+    <div class="project">
+      <%= p.name %>
+      <%= p.description%>
+    </div>
+  <% end %>
+</div>
