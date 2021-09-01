@@ -1,1 +1,249 @@
 // Specific CSS for your home-page
+
+@media all and (min-width: 1024px) and (max-width: 1920px) {
+  
+
+  .portrait {
+    width: 41%;
+    opacity: 0.9;
+    margin-right: 150px;
+    animation: fadein 12s;
+  }
+
+  .logo {
+    position: absolute;
+    top: 20px;
+    left: 16px;
+    width: 3%;
+  }
+
+  .body {
+    height: auto;
+    width: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .mt{
+    margin-top: 35px;
+    margin-bottom: 30px;
+  }
+
+  .text {
+    text-align: justify;
+    margin-left: 200px;
+    font-weight: bold 900;
+  }
+
+  #button {
+    font-family: 'Bebas Neue', cursive;
+    width: 500px;
+    padding: 8px 16px 8px 16px;
+    border-radius: 25px;
+    color: #4a6fc0;
+    text-decoration: none;
+    border: solid #4a6fc0;
+    margin-left: 5em;
+    animation: fadein 16s;
+  }
+
+  #button:hover{
+    color: #213c77;
+    border: solid #213c77;
+  }
+
+  .ho {
+    cursor: default;
+  }
+
+   ul {
+    position: relative;
+    top: 140px;
+    right: 236px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 0;
+  }
+
+  i {
+    color: #4268b9;
+    font-size: 30px;
+    margin-top: 20px;
+  }
+
+  .fa-envelope {
+    cursor: pointer;
+  }
+
+  h1 {
+    animation: fadein 1s;
+  }
+
+  span {
+    animation: fadein 6s;
+  }
+
+  @keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+  }
+}
+    /*fin de la query desktop*/ 
+
+    /*Media pour tablette*/
+
+@media all and (min-width: 600px) and (max-width: 1024px) {
+
+  .portrait {
+    position: relative;
+    top: 70px;
+    width: 72%;
+    opacity: 0.9;
+  }
+
+  p {
+    color:#87a0bb;/*#afcae6e1*/ 
+    font-size: 2em;
+    font-weight: bold;
+    /*text-shadow: -1px -1px 0px rgb(37, 32, 32);*/
+  }
+
+  .logo {
+    position: absolute;
+    top: 1%;
+    left: 16px;
+    background-image: url('/assets/picture/logo.png');
+    width: 6%;
+  }
+
+  .body {
+    height: auto;
+    width: auto;
+  }
+
+  .mt{
+    margin-top: 35px;
+    margin-bottom: 30px;
+  }
+
+  .text {
+    margin: 8% auto;
+    text-align: center;
+    font-weight: bold 900;
+  }
+
+  #button {
+    font-family: 'Bebas Neue', cursive;
+    width: 500px;
+    padding: 8px 16px 8px 16px;
+    border-radius: 25px;
+    color: #0a75e9e1;
+    text-decoration: none;
+    border: solid #0a75e9e1;
+  }
+
+  span {
+    margin-bottom: 20px;
+  }
+
+   ul {
+    width: 25%;
+    margin: 25px auto;
+    padding: 0px;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  i {
+    color: #4268b9;
+    font-size: 30px;
+    margin-top: 20px;
+  }
+ 
+} /* fin des media tablettes*/
+
+  /* media for phone*/
+@media all and (min-width: 320px) and (max-width: 600px) {
+
+  .body {
+    margin: 16% auto;
+    height: auto;
+    width: auto;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  
+  .portrait {
+    position: relative;
+    width: 70%;
+    opacity: 0.9;
+  }
+
+  p {
+    color:#87a0bb;/*#afcae6e1*/ 
+    font-size: 2em;
+    font-weight: bold;
+    /*text-shadow: -1px -1px 0px rgb(37, 32, 32);*/
+  }
+
+  .logo {
+    position: absolute;
+    top: 1%;
+    left: 16px;
+    background-image: url('/assets/picture/logo.png');
+    width: 6%;
+  }
+
+
+  .mt{
+    margin-top: 35px;
+    margin-bottom: 30px;
+  }
+
+  .text {
+    margin: 0px auto;
+    text-align: center;
+    font-weight: bold 900;
+  }
+
+  #button {
+    font-family: 'Bebas Neue', cursive;
+    width: 500px;
+    padding: 8px 16px 8px 16px;
+    border-radius: 25px;
+    color: #0a75e9e1;
+    text-decoration: none;
+    border: solid #0a75e9e1;
+  }
+
+  span {
+    margin-bottom: 20px;
+  }
+
+   ul {
+    width: auto;
+    margin: 5px auto;
+    padding: 0px;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  i {
+    color: #4268b9;
+    font-size: 30px;
+    margin-top: 20px;
+  }
+   
+}
