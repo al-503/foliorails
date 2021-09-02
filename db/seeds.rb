@@ -15,5 +15,5 @@ col.save!
 
 retro_world = Project.create!(name:"Retro_World", description:"Maquette Web type Air BnB sur la location de console.", web:'https://app-6777a89c-5d50-47a4-86c2-31abf2b27210.cleverapps.io')
 file = File.open("db/fixtures/images_project/RetroGaming.png")
-col.photo.attach(io: file, filename: "RetroGaming.png", content_type: 'image/png')
+retro_world.photo.attach(io: file, filename: "RetroGaming.png", content_type: 'image/png')
 retro_world.save!

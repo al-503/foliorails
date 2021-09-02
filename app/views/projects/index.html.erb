@@ -1,6 +1,7 @@
 <div class="projects">
   <% @projects.each do |p| %>
     <div class="project">
+      <%= cl_image_tag p.photo.key  %>
       <%= p.name %>
       <%= p.description%>
     </div>
