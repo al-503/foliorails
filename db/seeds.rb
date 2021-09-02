@@ -9,7 +9,11 @@ require "open-uri"
 Project.destroy_all
    
 col = Project.create!(name:"Col", description:"Progressive Web App pour aider les utilisateurs pour trouver une colocation.", web:'https://www.col.eu.com/')
+file = File.open("db/fixtures/images_project/colimg.jpg")
+col.photo.attach(io: file, filename: "colimg.jpg", content_type: 'image/png')
 col.save!
 
 retro_world = Project.create!(name:"Retro_World", description:"Maquette Web type Air BnB sur la location de console.", web:'https://app-6777a89c-5d50-47a4-86c2-31abf2b27210.cleverapps.io')
+file = File.open("db/fixtures/images_project/RetroGaming.png")
+col.photo.attach(io: file, filename: "RetroGaming.png", content_type: 'image/png')
 retro_world.save!
