@@ -1,9 +1,19 @@
 <div class="projects">
   <% @projects.each do |p| %>
-    <div class="project">
-      <%= cl_image_tag p.photo.key  %>
-      <%= p.name %>
-      <%= p.description%>
-    </div>
+    <a class="link" href="<%= p.web %>">
+      <div class="project">
+
+        <%= cl_image_tag p.photo.key, class:"pic" %>
+
+        <div class="line">
+          <h3><%= p.name %></h3>
+        </div>
+
+        <div class="card-content">
+          <p class="desc"><%= p.description%></p>
+        </div>
+
+      </div>
+    </a>
   <% end %>
 </div>
