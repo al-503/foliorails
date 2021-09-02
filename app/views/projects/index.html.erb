@@ -1,6 +1,6 @@
 <div class="projects">
   <% @projects.each do |p| %>
-    <a class="link" href="<%= p.web %>">
+    <a class="link" href="<%= p.web %>" target="blank">
       <div class="project">
 
         <%= cl_image_tag p.photo.key, class:"pic" %>
