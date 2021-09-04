@@ -21,7 +21,7 @@ body {
   
 
   .portrait {
-    width: 41%;
+    width: 40.5%;
     opacity: 0.9;
     margin-right: 150px;
     animation: fadein 12s;
@@ -54,21 +54,12 @@ body {
     font-weight: bold 900;
   }
 
-  #button {
-    font-family: 'Bebas Neue', cursive;
-    width: 500px;
-    padding: 8px 16px 8px 16px;
-    border-radius: 25px;
-    color: #4a6fc0;
-    text-decoration: none;
-    border: solid #4a6fc0;
-    margin-left: 5em;
-    animation: fadein 16s;
-  }
-
-  #button:hover{
-    color: #213c77;
-    border: solid #213c77;
+  .about {
+   
+    color:#87a0bb;/*#afcae6e1*/ 
+    font-size: 1em;
+    font-weight: bold;
+    /*text-shadow: -1px -1px 0px rgb(37, 32, 32);*/
   }
 
   .ho {
@@ -126,7 +117,7 @@ body {
     opacity: 0.9;
   }
 
-  p {
+  .about {
     color:#87a0bb;/*#afcae6e1*/ 
     font-size: 2em;
     font-weight: bold;
@@ -207,7 +198,7 @@ body {
     opacity: 0.9;
   }
 
-  p {
+  .about {
     color:#87a0bb;/*#afcae6e1*/ 
     font-size: 2em;
     font-weight: bold;
@@ -263,5 +254,4 @@ body {
     font-size: 30px;
     margin-top: 20px;
   }
-   
 }
