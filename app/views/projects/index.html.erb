@@ -1,19 +1,16 @@
 <div class="projects">
   <% @projects.each do |p| %>
-    <a class="link" href="<%= p.web %>" target="blank">
-      <div class="project">
 
+    <div class="project">
+
+      <a class="link" href="<%= p.web %>" target="blank">
         <%= cl_image_tag p.photo.key, class:"pic" %>
 
-        <div class="line">
-          <h3><%= p.name %></h3>
-        </div>
+        <h3 class="line"><%= p.name %></h3>
+      </a>
 
-        <div class="card-content">
-          <p class="desc"><%= p.description%></p>
-        </div>
+    </div>
 
-      </div>
-    </a>
+    
   <% end %>
 </div>
