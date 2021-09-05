@@ -19,7 +19,6 @@ body {
   
 @media all and (min-width: 1024px) and (max-width: 1920px) {
   
-
   .portrait {
     width: 40.5%;
     opacity: 0.9;
@@ -66,7 +65,7 @@ body {
     cursor: default;
   }
 
-   ul {
+   #social {
     position: relative;
     top: 80px;
     right: 236px;
@@ -162,7 +161,7 @@ body {
     margin-bottom: 20px;
   }
 
-   ul {
+   #social {
     width: 25%;
     margin: 25px auto;
     padding: 0px;
@@ -239,7 +238,7 @@ body {
     margin-bottom: 20px;
   }
 
-   ul {
+  #social {
     width: auto;
     margin: 5px auto;
     padding: 0px;

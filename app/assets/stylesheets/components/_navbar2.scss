@@ -1,6 +1,6 @@
 @media all and (min-width: 1024px) and (max-width: 1920px) {
 
-  #nav {
+  .nav {
     text-align: center;
     display: flex;
     justify-content: space-evenly;
@@ -8,13 +8,14 @@
     margin-left:60%;
     position: sticky;
     background-color: rgb(234, 235, 253);
+    list-style: none;
   }
 
   a {
     padding: 4px;
   }
 
-  #nav a {
+  .nav a {
     font-family: 'Bebas Neue', cursive;
     font-weight: normal 400;
     font-size: 28px;
@@ -22,25 +23,35 @@
     text-decoration: none;
   }
 
+  li a:is(:link, :active, :visited) {
+    color: #afcae6e1;
+    background-color: rgb(234, 235, 253);
+  }
+
+  a:is(:link, :active, :visited).active {
+    color: #032041e1;
+    background-color: rgb(234, 235, 253);
+  }
 } /* fin des MQ desk*/
 
 /* Media pour tablette*/
 @media all and (min-width: 600px) and (max-width: 1024px) {
 
- #nav {
+ .nav {
     text-align: center;
     display: flex;
     justify-content: space-around;
     width: 50%;
     margin: 0 auto;
     background-color: rgb(234, 235, 253);
+    list-style: none;
   }
 
   a {
     padding: 4px;
   }
 
-  #nav a {
+  .nav a {
     font-family: 'Bebas Neue', cursive;
     font-weight: normal 400;
     font-size: 28px;
@@ -48,9 +59,14 @@
     text-decoration: none;
   }
 
-  #nav a.router-link-exact-active {
-    color: #4268b9;
-    text-decoration: none;
+  li a:is(:link, :active, :visited) {
+    color: #afcae6e1;
+    background-color: rgb(234, 235, 253);
+  }
+
+  a:is(:link, :active, :visited).active {
+    color: #032041e1;
+    background-color: rgb(234, 235, 253);
   }
 
 } /* media querie desktop*/
@@ -59,20 +75,21 @@
 
 @media all and (min-width: 320px) and (max-width: 600px) {
 
- #nav {
+ .nav {
     text-align: center;
     display: flex;
     justify-content: space-evenly;
     width: auto;
     margin: 0 auto;
     background-color: rgb(234, 235, 253);
+    list-style: none;
   }
 
   a {
     padding: 4px;
   }
 
-  #nav a {
+  .nav a {
     font-family: 'Bebas Neue', cursive;
     font-weight: normal 400;
     font-size: 18px;
@@ -80,8 +97,13 @@
     text-decoration: none;
   }
 
-  #nav a.router-link-exact-active {
-    color: #4268b9;
-    text-decoration: none;
+  li a:is(:link, :active, :visited) {
+    color: #afcae6e1;
+    background-color: rgb(234, 235, 253);
+  }
+
+  a:is(:link, :active, :visited).active {
+    color: #032041e1;
+    background-color: rgb(234, 235, 253);
   }
 }
