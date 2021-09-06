@@ -2,15 +2,14 @@
 
   .project {
     margin: 0 auto;
-    margin-top: 50%;
-    width: 25%;
-    height: 60%;
-    transform: rotate(-90deg);
+    margin-top: 8px;
+    width: 100px;
+    height: 400px;
   }
 
   .pic {
-    width: 400px;
-    height: 100px;
+    width: 100px;
+    height: 400px;
     object-fit: cover; /* comme backgroud size cover*/
     image-rendering: auto;
     border-radius: 16px;
@@ -18,13 +17,13 @@
 
   .line {
     font-family: 'Bebas Neue', cursive;
-    margin: 0 auto;
+    margin: 0;
     font-size: 36px;
     color: white;
     position: relative;
-    bottom: 70px;
-    left: 25%;
+    bottom: 22%;
     text-align: center;
+    transform: rotate(-90deg);
   }
 
   .link {
