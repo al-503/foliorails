@@ -1,0 +1,2 @@
+class SchemasController < ApplicationController
+end

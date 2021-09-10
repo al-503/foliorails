@@ -1,0 +1,2 @@
+class MokeupsController < ApplicationController
+end
