@@ -4,9 +4,9 @@
     <%= cl_image_tag @project.photo.key, class:"project_banner_pic" %>
     <a class="go_site" href="<%= @project.web %>" target="blank">Visiter</a>
     <!---back safe zone--->
+    <%= link_to"Back safe Zone", projects_path, class:"link" %>
   </div>
 
-    <%= link_to"Back safe Zone", projects_path, class:"link" %>
   <div class="project_body">
     <!---mokeup--->
     <!---schema db--->

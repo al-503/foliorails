@@ -49,6 +49,13 @@ ActiveRecord::Schema.define(version: 2021_09_01_143000) do
     t.datetime "updated_at", precision: 6, null: false
   end
 
+  create_table "mokeups", force: :cascade do |t|
+    t.string "title"
+    t.text "description"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
   create_table "project_langages", force: :cascade do |t|
     t.bigint "langage_id", null: false
     t.bigint "project_id", null: false
@@ -58,10 +65,50 @@ ActiveRecord::Schema.define(version: 2021_09_01_143000) do
     t.index ["project_id"], name: "index_project_langages_on_project_id"
   end
 
+  create_table "project_mokeups", force: :cascade do |t|
+    t.bigint "mokeup_id", null: false
+    t.bigint "project_id", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["mokeup_id"], name: "index_project_mokeups_on_mokeup_id"
+    t.index ["project_id"], name: "index_project_mokeups_on_project_id"
+  end
+
+  create_table "project_schemas", force: :cascade do |t|
+    t.bigint "schema_id", null: false
+    t.bigint "project_id", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["project_id"], name: "index_project_schemas_on_project_id"
+    t.index ["schema_id"], name: "index_project_schemas_on_schema_id"
+  end
+
+  create_table "project_tools", force: :cascade do |t|
+    t.bigint "tool_id", null: false
+    t.bigint "project_id", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["project_id"], name: "index_project_tools_on_project_id"
+    t.index ["tool_id"], name: "index_project_tools_on_tool_id"
+  end
+
   create_table "projects", force: :cascade do |t|
     t.string "name"
     t.string "description"
     t.string "web"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "schemas", force: :cascade do |t|
+    t.string "title"
+    t.text "description"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "tools", force: :cascade do |t|
+    t.string "name"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
@@ -82,4 +129,10 @@ ActiveRecord::Schema.define(version: 2021_09_01_143000) do
   add_foreign_key "active_storage_variant_records", "active_storage_blobs", column: "blob_id"
   add_foreign_key "project_langages", "langages"
   add_foreign_key "project_langages", "projects"
+  add_foreign_key "project_mokeups", "mokeups"
+  add_foreign_key "project_mokeups", "projects"
+  add_foreign_key "project_schemas", "projects"
+  add_foreign_key "project_schemas", "schemas"
+  add_foreign_key "project_tools", "projects"
+  add_foreign_key "project_tools", "tools"
 end
