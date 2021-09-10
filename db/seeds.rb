@@ -6,10 +6,20 @@ require "open-uri"
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
 ProjectLangage.destroy_all
+ProjectTool.destroy_all
+ProjectSchema.destroy_all
+ProjectMokeup.destroy_all
+
 Project.destroy_all
 Langage.destroy_all
-   
+Tool.destroy_all
+Schema.destroy_all
+Mokeup.destroy_all
+
+# Project
+
 col = Project.create!(name:"Col", description:"Progressive Web App pour aider les utilisateurs pour trouver une colocation.", web:"https://www.col.eu.com/")
 file = File.open("db/fixtures/images_project/col.jpeg")
 col.photo.attach(io: file, filename: "col.jpeg", content_type: 'image/png')
@@ -20,6 +30,7 @@ file = File.open("db/fixtures/images_project/retro_world.jpg")
 retro_world.photo.attach(io: file, filename: "retro_world.jpg", content_type: 'image/png')
 retro_world.save!
 
+# Langages
 
 rails = Langage.create(name: "Ruby on rails")
 file = File.open("db/fixtures/images_langages/RubyRailsT.png")
@@ -46,6 +57,8 @@ file = File.open("db/fixtures/images_langages/JS.png")
 javascript.photo.attach(io: file, filename: "JS.png", content_type: 'image/png')
 javascript.save!
 
+# Project Langages
+
 col_langages_html = ProjectLangage.create!( project: col, langage: html)
 col_langages_css = ProjectLangage.create!( project: col, langage: css)
 col_langages_js = ProjectLangage.create!( project: col, langage: javascript)
@@ -58,3 +71,44 @@ retro_langages_css = ProjectLangage.create!( project: retro_world, langage: css)
 retro_langages_js = ProjectLangage.create!( project: retro_world, langage: javascript)
 retro_langages_rails = ProjectLangage.create!( project: retro_world, langage:rails)
 retro_langages_postgr = ProjectLangage.create!( project: retro_world, langage: postgr)
+
+# Tools
+
+trello = Tool.create(name: "Trello")
+file = File.open("db/fixtures/images_tools/Trello.png")
+trello.photo.attach(io: file, filename: "Trello.png", content_type: 'image/png')
+trello.save!
+
+git = Tool.create(name: "Git")
+file = File.open("db/fixtures/images_tools/git.png")
+git.photo.attach(io: file, filename: "git.png", content_type: 'image/png')
+git.save!
+
+github = Tool.create(name: "GitHub")
+file = File.open("db/fixtures/images_tools/GITHUB.png")
+github.photo.attach(io: file, filename: "GITHUB.png", content_type: 'image/png')
+github.save!
+
+zoom = Tool.create(name: "Zoom")
+file = File.open("db/fixtures/images_tools/Zoom2.png")
+zoom.photo.attach(io: file, filename: "Zoom2.png", content_type: 'image/png')
+zoom.save!
+
+slack = Tool.create(name: "Slack")
+file = File.open("db/fixtures/images_tools/Slackx500.png")
+slack.photo.attach(io: file, filename: "Slackx500.png", content_type: 'image/png')
+slack.save!
+
+# project tools
+
+col_tools_trello = ProjectTool.create(project: col ,tool: trello)
+col_tools_git = ProjectTool.create(project: col ,tool: git)
+col_tools_github = ProjectTool.create(project: col ,tool: github)
+col_tools_zoom = ProjectTool.create(project: col ,tool: zoom)
+col_tools_slack = ProjectTool.create(project: col ,tool: slack)
+
+retro_tools = ProjectTool.create(project: retro_world, tool:trello)
+retro_tools_git = ProjectTool.create(project: retro_world ,tool: git)
+retro_tools_github = ProjectTool.create(project: retro_world ,tool: github)
+retro_tools_zoom = ProjectTool.create(project: retro_world ,tool: zoom)
+retro_tools_slack = ProjectTool.create(project: retro_world ,tool: slack)
