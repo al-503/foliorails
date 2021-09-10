@@ -99,6 +99,11 @@ file = File.open("db/fixtures/images_tools/Slackx500.png")
 slack.photo.attach(io: file, filename: "Slackx500.png", content_type: 'image/png')
 slack.save!
 
+figma = Tool.create(name: "Figma")
+file = File.open("db/fixtures/images_tools/Figma-logo.png")
+figma.photo.attach(io: file, filename: "Figma-logo.png", content_type: 'image/png')
+figma.save!
+
 # project tools
 
 col_tools_trello = ProjectTool.create(project: col ,tool: trello)
@@ -112,3 +117,37 @@ retro_tools_git = ProjectTool.create(project: retro_world ,tool: git)
 retro_tools_github = ProjectTool.create(project: retro_world ,tool: github)
 retro_tools_zoom = ProjectTool.create(project: retro_world ,tool: zoom)
 retro_tools_slack = ProjectTool.create(project: retro_world ,tool: slack)
+
+# schemas
+
+col_schema1 = Schema.create(title:"Schema Database" ,description:"")
+file = File.open("db/fixtures/images_schema/Schema_col-1280.png")
+col_schema1.photo.attach(io: file, filename: "Schema_col-1280.png", content_type: 'image/png')
+col_schema1.save!
+
+retro_schema1 = Schema.create(title:"Schema Database" ,description:"")
+file = File.open("db/fixtures/images_schema/Schema_retro-1280.png")
+retro_schema1.photo.attach(io: file, filename: "Schema_retro-1280.png", content_type: 'image/png')
+retro_schema1.save!
+
+# Project Shema
+
+col_final_schema = ProjectSchema.create(project: col, schema: col_schema1)
+
+retro_final_schema = ProjectSchema.create(project: retro_world, schema: retro_schema1)
+
+# Mokeup
+
+col_mokeup1 = Mokeup.create(title:"Design avant conception" ,description:"")
+file = File.open("db/fixtures/images_mokeup/Col-Figma.png")
+col_mokeup1.photo.attach(io: file, filename: "Col-Figma.png", content_type: 'image/png')
+col_mokeup1.save!
+
+retro_mokeup1 = Mokeup.create(title:"Design avant conception" ,description:"")
+
+
+# Project mokeup
+
+col_design = ProjectMokeup.create(project: col, mokeup: col_mokeup1)
+
+retro_design = ProjectMokeup.create(project: retro_world, mokeup: retro_mokeup1)
