@@ -1,9 +1,11 @@
+<%= render 'shared/navbar2' %>
+
 <div class="projects">
   <% @projects.each do |p| %>
 
-    <div class="project">
-
-      <a class="link" href="<%= p.web %>" target="blank">
+    <div class="project_choice">
+      <%= link_to project_path(p), class:"link" do %>
+      
         <%= cl_image_tag p.photo.key, class:"pic" %>
 
         <h3 class="line"><%= p.name %></h3>
@@ -13,8 +15,8 @@
             <p><%= cl_image_tag l.photo.key, class:"langlogo" %></p>
           <% end %>
         </div>
-      </a>
-
+      <% end %>
+    
     </div>
 
 
