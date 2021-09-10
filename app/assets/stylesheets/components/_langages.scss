@@ -1,4 +1,5 @@
 @media all and (min-width: 1024px) and (max-width: 1920px) {
+
 .langlogo {
   width: 24px;
   height: 24px;
@@ -6,19 +7,42 @@
 
 .langages {
   margin: 0;
-    position: relative;
-    bottom: 108%;
-    left: 34%;
-    text-align: center;
+  position: relative;
+  bottom: 108%;
+  left: 34%;
+  text-align: center;
 }
 
 }
 
 @media all and (min-width: 600px) and (max-width: 1024px) {
   /*add content*/
+.langlogo {
+  width: 16px;
+  height: 16px;
+}
+
+.langages {
+  margin: 0;
+  display: flex;
+  position: relative;
+  bottom: 75px; left: 24px;
+}
 
 }
 
 @media all and (min-width: 320px) and (max-width: 600px) {
   /* add content*/
+.langlogo {
+  width: 12px;
+  height: 12px;
+ }
+
+.langages {
+  margin: 0;
+  display: flex;
+  position: relative;
+  bottom: 75px; left: 24px;
+}
+
 }
