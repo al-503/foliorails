@@ -120,12 +120,16 @@ retro_tools_slack = ProjectTool.create(project: retro_world ,tool: slack)
 
 # schemas
 
-col_schema1 = Schema.create(title:"Schema Database" ,description:"")
+col_schema1 = Schema.create(title:"Schema Database" ,description:"Le schéma de database a était réalisé en trio sur ce projet,
+                                                                  il s'agissait d'un projet pour la formation le Wagon.Le schéma se base sur une user storie elle aussi réaliser en trio. 
+                                                                  Ce schéma nous a permis de gagner du temp sur la génération de la DB et de commencer avec un fil conducteur de DB clair pour gagner du temp sur le développement")
 file = File.open("db/fixtures/images_schema/Schema_col-1280.png")
 col_schema1.photo.attach(io: file, filename: "Schema_col-1280.png", content_type: 'image/png')
 col_schema1.save!
 
-retro_schema1 = Schema.create(title:"Schema Database" ,description:"")
+retro_schema1 = Schema.create(title:"Schema Database" ,description:"Le schéma de Database a été réaliser en trio sur la base d'une user storie,
+                                                                    il s'agissait de notre tout premier projet web complet 
+                                                                    (Back end, Front end) pendant la formation du Wagon se basant sur une copie type AirB&B")
 file = File.open("db/fixtures/images_schema/Schema_retro-1280.png")
 retro_schema1.photo.attach(io: file, filename: "Schema_retro-1280.png", content_type: 'image/png')
 retro_schema1.save!
@@ -138,13 +142,20 @@ retro_final_schema = ProjectSchema.create(project: retro_world, schema: retro_sc
 
 # Mokeup
 
-col_mokeup1 = Mokeup.create(title:"Design avant conception" ,description:"")
+col_mokeup1 = Mokeup.create(title:"Design avant conception" ,description:" Pour Col. nous somme allé plus loin qu'un simple Mokeup noir et blanc ,
+                                                                            nous devions savoir à quoi resemblerait le produit finale n'ayant que 10 jour pour le développer
+                                                                            et ainsi gagner du temp sur le développement. 
+                                                                            Nous avont essayer de nombreuses combinaisons notamment avec le gradient et le noir pour que les couleurs ressortent,
+                                                                            mais aussi le choix des smileys pour faciliter l'accessibilité.")
 file = File.open("db/fixtures/images_mokeup/Col-Figma.png")
 col_mokeup1.photo.attach(io: file, filename: "Col-Figma.png", content_type: 'image/png')
 col_mokeup1.save!
 
-retro_mokeup1 = Mokeup.create(title:"Design avant conception" ,description:"")
-
+retro_mokeup1 = Mokeup.create(title:"Design avant conception" ,description:"Pour Rétro_World nous avons fait nos premiers pas sur Figma.
+                                                                            Il s'agit d'un Mokeup personnel réaliser en noir et blanc avec l'aide user profil type.")
+file = File.open("db/fixtures/images_mokeup/Retro_mokeup.png")
+retro_mokeup1.photo.attach(io: file, filename: "Retro_mokeup.png", content_type: 'image/png')
+retro_mokeup1.save!
 
 # Project mokeup
 

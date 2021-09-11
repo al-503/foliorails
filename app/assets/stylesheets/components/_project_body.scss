@@ -1,0 +1,38 @@
+.tools {
+  display: flex;
+}
+
+.lang {
+  display: flex;
+}
+
+.liicon {
+  list-style: none;
+}
+
+.tool, .lang {
+  width: 50px;
+}
+
+/* mokeup */
+.mokepic {
+  width: 200px;
+  height: 170px;
+}
+
+.moketext {
+  width: 350px;
+  height: 170px;
+  margin: 0 auto;
+}
+/* schema */
+.schemapic {
+  width: 200px;
+  height: 170px;
+}
+
+.schematext {
+  width: 350px;
+  height: 170px;
+  margin: 0 auto;
+}

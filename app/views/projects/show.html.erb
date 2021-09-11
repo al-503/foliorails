@@ -3,18 +3,50 @@
   <div class="project_banner">
     <%= cl_image_tag @project.photo.key, class:"project_banner_pic" %>
     <a class="go_site" href="<%= @project.web %>" target="blank">Visiter</a>
-    <!---back safe zone--->
-    <%= link_to"Back safe Zone", projects_path, class:"link" %>
   </div>
 
   <div class="project_body">
-    <!---mokeup--->
-    <!---schema db--->
+
     <!---tools--->
+    <div class="tools">
+      <ul class="ulicon">
+      <% @project.tools.each do |t|%>
+          <li class="liicon"><%= cl_image_tag t.photo.key , class:"tool" %></li>
+      </ul>
+      <% end %>
+    </div>
+
     <!---langages--->
-  </div>
+    <div class="lang">
+      <ul class="ulicon">
+      <% @project.langages.each do |l|%>
+        <li class="liicon"><%= cl_image_tag l.photo.key , class:"lang" %></li>
+      </ul>
+      <% end %>
+    </div>
+
+    <!---mokeup--->
+    <div class="mokeup">
+      <% @project.mokeups.each do |m|%>
+        <h3><%= m.title %></h3>
+        <%= cl_image_tag m.photo.key, class:"mokepic" %>
+        <p class="moketext"><%= m.description %></p>
+      <% end %>    
+    </div>
+
+    <!---schema db--->
+    <div class="schema">
+      <% @project.schemas.each do |s|%>
+        <h3><%= s.title %></h3>
+        <%= cl_image_tag s.photo.key, class:"schemapic" %>
+        <p class="schematext"><%= s.description %></p>
+      <% end %>
+    </div>
+
 
   <div class="project_footer">
+    <!---back safe zone--->
+    <%= link_to"Back safe Zone", projects_path, class:"link" %>
   </div>
 
 </div>
