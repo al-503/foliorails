@@ -111,12 +111,14 @@ col_tools_git = ProjectTool.create(project: col ,tool: git)
 col_tools_github = ProjectTool.create(project: col ,tool: github)
 col_tools_zoom = ProjectTool.create(project: col ,tool: zoom)
 col_tools_slack = ProjectTool.create(project: col ,tool: slack)
+col_tools_figma = ProjectTool.create(project: col ,tool: figma)
 
 retro_tools = ProjectTool.create(project: retro_world, tool:trello)
 retro_tools_git = ProjectTool.create(project: retro_world ,tool: git)
 retro_tools_github = ProjectTool.create(project: retro_world ,tool: github)
 retro_tools_zoom = ProjectTool.create(project: retro_world ,tool: zoom)
 retro_tools_slack = ProjectTool.create(project: retro_world ,tool: slack)
+retro_tools_figma = ProjectTool.create(project: retro_world ,tool: figma)
 
 # schemas
 
