@@ -37,17 +37,21 @@
 
 /* mokeup & schema */
 .mokeup, .schema {
-  margin: 8px auto;
+  margin: 32px auto;
   text-align: center;
   padding: 8px;
   width: 80%;
 }
-
+h3 {
+  font-family: 'Bebas Neue', cursive;
+  color: #032041e1;
+  letter-spacing: 3px;
+}
 .mokeup-content, .schema-content {
   display: flex;
   align-items: center;
   padding: 8px;
-  margin: 8px auto;
+  margin: 16px auto;
 }
 
 .mokepic, .schemapic {
