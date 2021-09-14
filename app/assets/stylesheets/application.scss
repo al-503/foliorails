@@ -11,3 +11,30 @@
 // Your CSS partials
 @import "components/index";
 @import "pages/index";
+
+body {
+  height: 100vh;
+  cursor: none;
+}
+
+.cursor {
+  width: 40px;
+  height: 40px;
+  cursor: none;
+  border-radius: 50%;
+  border: 1px solid black;
+  position: absolute;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.cursor::before {
+  content: "";
+  position: absolute;
+  top: 50%;left: 50%;
+  transform: translate(-50%, -50%);
+  width: 4px;
+  height: 4px;
+  background-color: red;
+  border-radius: 50%;
+}
