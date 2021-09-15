@@ -1,14 +1,19 @@
 @media all and (min-width: 1024px) and (max-width: 1920px) {
 
-  .nav {
+  .nav-links {
     text-align: center;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: flex-end;
     width: 40%;
     margin-left:60%;
     position: sticky;
     background-color: rgb(234, 235, 253);
     list-style: none;
+  }
+
+  #navitem {
+    padding: 4px;
+    margin-left: 16px;
   }
 
   a {
@@ -37,7 +42,7 @@
 /* Media pour tablette*/
 @media all and (min-width: 600px) and (max-width: 1024px) {
 
- .nav {
+ .nav-links {
     text-align: center;
     display: flex;
     justify-content: space-around;
@@ -45,6 +50,11 @@
     margin: 0 auto;
     background-color: rgb(234, 235, 253);
     list-style: none;
+  }
+
+  #navitem {
+    padding: 4px;
+    margin-left: 16px;
   }
 
   a {
@@ -75,7 +85,7 @@
 
 @media all and (min-width: 320px) and (max-width: 600px) {
 
- .nav {
+ .nav-links {
     text-align: center;
     display: flex;
     justify-content: space-evenly;
@@ -83,6 +93,11 @@
     margin: 0 auto;
     background-color: rgb(234, 235, 253);
     list-style: none;
+  }
+
+  #navitem {
+    padding: 4px;
+    margin-left: 16px;
   }
 
   a {

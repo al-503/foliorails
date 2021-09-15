@@ -1,15 +1,12 @@
-const cursor = document.querySelector('.cursor');
+//const mouseCursor = document.querySelector('.cursor');
 
-document.addEventListener('mousemove', e => {
-  cursor.setAttribute('style','top:'+(e.pageY - 20)+ "px; left:"+(e.pageX-20)+"px;")
-})
+//const navLink = document.querySelectorAll('.nav-links li');
 
-document.addEventListener('mouseover', () => {
-  cursor.classList.add('expand');
+//window.addEventListener('mousemove', cursor);
 
-    setTimeout(() => {
-      cursor.classList.remove("expand");
-    }, 500)
-})
+//function cursor(e) {
+//  mouseCursor.style.top = e.pageY + 'px';
+//  mouseCursor.style.left = e.pageX + 'px';
+//}
 
-export{cursor}
+//export{ cursor }
