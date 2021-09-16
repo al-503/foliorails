@@ -10,15 +10,14 @@
 
         <h3 class="line"><%= p.name %></h3>
 
-        <div class="langages">
-          <% p.langages.each do |l|%>
-            <p><%= cl_image_tag l.photo.key, class:"langlogo" %></p>
-          <% end %>
-        </div>
+        <!---<div class="langages">--->
+        <!---<% p.langages.each do |l|%>-->
+        <!---<p><%= cl_image_tag l.photo.key, class:"langlogo" %></p>-->
+        <!--<% end %>-->
+        <!--</div>-->
       <% end %>
     
     </div>
-
 
   <% end %>
 </div>

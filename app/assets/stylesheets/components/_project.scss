@@ -28,13 +28,19 @@
 
   .link {
     text-decoration: none;
-    color: inherit;
+    color: #373e4d;
     margin: 0 auto;
     font-family: 'Bebas Neue', cursive;
     &:hover {
       text-decoration: none;
       color: #373e4d;
     }
+  }
+
+  .fa-arrow-up {
+    font-size: 16px;
+    color: #373e4d;
+    transform: rotate(-90deg);
   }
 }
 
@@ -68,7 +74,7 @@
 
   .link {
     text-decoration: none;
-    color: inherit;
+    color: #373e4d;
     margin: 0 auto;
     font-family: 'Bebas Neue', cursive;
     &:hover {
@@ -108,7 +114,7 @@
 
   .link {
     text-decoration: none;
-    color: inherit;
+    color: #373e4d;
     margin: 0 auto;
     font-family: 'Bebas Neue', cursive;
     &:hover {
