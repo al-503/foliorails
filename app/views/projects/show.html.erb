@@ -29,36 +29,45 @@
 
   <div class="project_body">
 
+    <div class="slider">
+      <div class="slides">
+        <div class="slide first">
+        <!---mokeup--->
+          <div class="mokeup">
+            <% @project.mokeups.each do |m|%>
 
-    <!---mokeup--->
-    <div class="mokeup">
-      <% @project.mokeups.each do |m|%>
+            <h3><%= m.title %></h3>
+              <div class="mokeup-content">
+                <%= cl_image_tag m.photo.key, class:"mokepic" %>
+                <p class="moketext"><%= m.description %></p>
+              </div> 
+            <% end %>
 
-      <h3><%= m.title %></h3>
-        <div class="mokeup-content">
-          <%= cl_image_tag m.photo.key, class:"mokepic" %>
-          <p class="moketext"><%= m.description %></p>
-        </div> 
-      <% end %>
+          </div>
 
-    </div>
-
-    <!---schema db--->
-    <div class="schema">
-      <% @project.schemas.each do |s|%>
-      <h3><%= s.title %></h3>
-        <div class="schema-content">
-          <%= cl_image_tag s.photo.key, class:"schemapic" %>
-          <p class="schematext"><%= s.description %></p>
         </div>
-      <% end %>
+
+        <div class="slide">
+        <!---schema db--->
+          <div class="schema">
+            <% @project.schemas.each do |s|%>
+            <h3><%= s.title %></h3>
+              <div class="schema-content">
+                <%= cl_image_tag s.photo.key, class:"schemapic" %>
+                <p class="schematext"><%= s.description %></p>
+              </div>
+            <% end %>
+          </div>
+
+        </div>
+
+      </div>
     </div>
-
-
-  <div class="project_footer">
-    <!---back safe zone--->
-    
-    <p><i class="fas fa-arrow-up"></i><%= link_to"Back safe", projects_path, class:"link" %></p>
   </div>
+
+    <div class="project_footer">
+      <!---back safe zone---> 
+      <p><i class="fas fa-arrow-up"></i><%= link_to"Retour Projets", projects_path, class:"link" %></p>
+    </div>
 
 </div>
