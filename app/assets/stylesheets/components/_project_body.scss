@@ -47,20 +47,16 @@ h3 {
   color: #032041e1;
   letter-spacing: 3px;
 }
-.mokeup-content, .schema-content {
-  display: flex;
-  align-items: center;
-  padding: 8px;
-  margin: 16px auto;
-}
 
 .mokepic, .schemapic {
-  width: 40%;
-  height: 25%;
+  width: 45%;
+  height: 5%;
+  margin: 5px;
 }
 
 .moketext, .schematext {
-  width: 50%;
+  width: 78%;
   height: 25%;
   margin: 0 auto;
+  margin-top: 15px;
 }
