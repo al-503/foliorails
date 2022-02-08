@@ -28,27 +28,25 @@
 .navigation-manual {
   position: absolute;
   width: 100%;
-  margin-top: -40px;
   display: flex;
   justify-content: center;
+  top: 503px;
+  justify-content: space-evenly;
 }
 
 .manual-btn {
-  border: 1px solid #032041e1;
   padding: 5px;
   border-radius: 10px;
   cursor: pointer;
-  margin: 4px;
+  margin: 0px;
   transition: 1s;
+  letter-spacing: 20px;
 }
 
 .manual-btn:not(:last-child){
   margin-right: 40px;
 }
 
-.manual-btn:hover {
-  background: #032041e1;
-}
 
 #radio1:checked ~ .first {
   margin-left: 0;
