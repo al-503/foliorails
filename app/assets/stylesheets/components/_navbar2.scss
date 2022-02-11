@@ -12,12 +12,6 @@
     margin-top: 0px;
   }
 
-  #navitem {
-    padding: 4px;
-    margin-left: 16px;
-    margin-right: 16px;
-  }
-
   a {
     padding: 4px;
   }
@@ -26,18 +20,18 @@
     font-family: 'Bebas Neue', cursive;
     font-weight: normal 400;
     font-size: 28px;
-    color: #afcae6e1;
     text-decoration: none;
+    padding: 4px;
+    margin-left: 16px;
+    margin-right: 16px;
   }
 
   li a:is(:link, :active, :visited) {
-    color: #afcae6e1;
-    background-color: rgb(234, 235, 253);
+    color: #8279dae1;
   }
 
   a:is(:link, :active, :visited).active {
-    color: #010b16e1;
-    background-color: rgb(236, 14, 14);
+    color: #1900fae1;
   }
 } /* fin des MQ desk*/
 
