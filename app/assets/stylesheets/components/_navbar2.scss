@@ -31,7 +31,7 @@
   }
 
   a:is(:link, :active, :visited).active {
-    color: #1900fae1;
+    color: #0d0842e1;
   }
 } /* fin des MQ desk*/
 
@@ -89,6 +89,7 @@
     margin: 0 auto;
     background-color: rgb(234, 235, 253);
     list-style: none;
+    padding: 0px;
   }
 
   #navitem {

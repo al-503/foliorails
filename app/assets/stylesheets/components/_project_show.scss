@@ -97,13 +97,11 @@
 }
 
 .project_banner {
-  margin: 0 auto;
-  margin-left: 15%;
+  margin: 0  18% auto;
 }
 
 .project_banner_pic {
-  margin: 0 auto;
-  margin-top: 2%;
+  margin: 0% 18% auto;
   width: 250px;
   height: 100px;
   object-fit: cover; /* comme backgroud size cover*/
@@ -113,11 +111,9 @@
 }
 
 .go_site {
+  margin: 0 36% auto;
   color: white;
   font-family: "Work Sans", "Helvetica", "sans-serif";
-  position: relative;
-  right: 47%;
-  top: -29px;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.527);
 }
 
