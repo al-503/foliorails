@@ -1,9 +1,9 @@
 @media all and (min-width: 1024px) and (max-width: 1920px) {
 
-.project {
-  height: auto;
-  width: auto;
-}
+  .project {
+    height: 100vh;
+    width: 100vw;
+  }
 
 .project_banner {
   margin: 0 auto;

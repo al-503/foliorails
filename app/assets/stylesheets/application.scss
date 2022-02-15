@@ -17,7 +17,11 @@ body {
   width: auto;
   height: auto;
   margin: 0 auto;
-  overflow: hidden;
+}
+
+//pour cacher la scroll-bar doit s'appliquer au contenant
+body::-webkit-scrollbar {
+  display: none;
 }
 
 html{

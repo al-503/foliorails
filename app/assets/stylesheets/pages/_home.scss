@@ -8,7 +8,11 @@
   }
   
 @media all and (min-width: 1024px) and (max-width: 1920px) {
-  
+  .home_page {
+    height: 100vh;
+    overflow: hidden;
+  }
+
   .portrait {
     width: 40.5%;
     opacity: 0.9;
@@ -33,7 +37,6 @@
   }
 
   .mt{
-    margin-top: 35px;
     margin-bottom: 30px;
   }
 
@@ -56,15 +59,14 @@
     cursor: default;
   }
 
-   #social {
-    position: relative;
-    top: 80px;
-    right: 236px;
+  .social {
     list-style: none;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     margin: 0;
+    position: absolute;
+    left: 1%;
   }
 
   .social-name {
