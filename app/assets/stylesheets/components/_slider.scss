@@ -148,21 +148,19 @@
 /* manual slide */
 
 .navigation-manual {
-  position: absolute;
+  margin: 0 37% auto;
   display: flex;
-  right: 40%;
   justify-content: center;
 }
 
 .manual-btn {
   padding: 5px;
   cursor: pointer;
-  margin: 4px;
-  transition: 1s;
+  margin: 0 17% auto;
 }
 
 .manual-btn:not(:last-child){
-  margin-right: 40px;
+
 }
 
 
