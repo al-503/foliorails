@@ -1,3 +1,14 @@
+.back_button {
+  position: absolute;
+  top: 0px;
+  left: 5%;
+}
+
+.fa-solid .fa-arrow-left-long-to-line {
+
+  color: red;
+}
+
 @media all and (min-width: 1024px) and (max-width: 1920px) {
 
   .project_choice {
@@ -95,10 +106,6 @@
   }
 }
 
-.back_button {
-  position: absolute;
-  top: 0px;
-}
 
 @media all and (min-width: 320px) and (max-width: 600px) {
 
